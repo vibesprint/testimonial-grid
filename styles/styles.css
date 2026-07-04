@@ -13,6 +13,8 @@ main > article {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  row-gap: 1.5rem;
+  column-gap: 2rem;
   grid-template-areas: "card-1 card-1 card-2 card-5" "card-3 card-4 card-4 card-5";
 }
 main > article .card-1 {
@@ -36,8 +38,9 @@ main > article .card-5 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   color: #FFFFFF;
+  box-shadow: 40px 60px 50px -47px rgb(from #48556A r g b/24.75);
 }
 .card .body {
   display: flex;
@@ -91,12 +94,18 @@ main > article .card-5 {
 
 main > article .card-1 {
   background-color: #733FC8;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 85% 0%;
 }
 main > article .card-1 .person-name {
   color: #FFFFFF;
 }
 main > article .card-1 .person-tag {
   color: #EDE4FF;
+}
+main > article .card-1 .body {
+  max-width: 476px;
 }
 main > article .card-1 .body-copy {
   color: #EDE4FF;
@@ -110,6 +119,9 @@ main > article .card-2 .person-name {
 main > article .card-2 .person-tag {
   color: #E7EAEE;
 }
+main > article .card-2 .body {
+  max-width: 191px;
+}
 main > article .card-2 .body .body-copy {
   color: #E7EAEE;
 }
@@ -122,6 +134,9 @@ main > article .card-3 .person-name {
 main > article .card-3 .person-tag {
   color: #676D7E;
 }
+main > article .card-3 .body {
+  max-width: 191px;
+}
 main > article .card-3 .body .body-heading {
   color: #48556A;
 }
@@ -133,6 +148,9 @@ main > article .card-4 {
 }
 main > article .card-4 .person-details {
   color: #FFFFFF;
+}
+main > article .card-4 .body {
+  max-width: 476px;
 }
 main > article .card-4 .body-heading {
   color: #CFCFCF;
@@ -149,6 +167,9 @@ main > article .card-5 .person-name, main > article .card-5 .body-heading {
 }
 main > article .card-5 .person-tag, main > article .card-5 .body-copy {
   color: #676D7E;
+}
+main > article .card-5 .body {
+  max-width: 191px;
 }
 
 /*# sourceMappingURL=styles.css.map */
