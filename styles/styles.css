@@ -172,4 +172,25 @@ main > article .card-5 .body {
   max-width: 191px;
 }
 
+@media (max-width: 768px) {
+  main article {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-template-areas: "card-1 card-1" "card-2 card-3" "card-4 card-4" "card-5 card-5";
+    gap: 2rem;
+    max-width: 647px;
+  }
+  main article .card .body {
+    max-width: none;
+  }
+}
+@media (max-width: 576px) {
+  main article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 305px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
